@@ -34,13 +34,13 @@ cd TodoApp
 For Linux:
 
 ```bash
-g++ -std=c++17 -o todo_manager main.cpp dependencies/FileHandler.cpp dependencies/TimeHandler.cpp
+g++ -std=c++17 -o todo_manager main.cpp
 ```
 
 For Windows (using MinGW):
 
 ```bash
-g++ -std=c++17 -o todo_manager.exe main.cpp dependencies/FileHandler.cpp dependencies/TimeHandler.cpp
+g++ -std=c++17 -o todo_manager.exe main.cpp
 ```
 
 ## Usage
