@@ -10,18 +10,23 @@ Make sure you have the following installed on your system:
 - Filesystem Library (Included in C++17)
 - C++ Standard Template Library (STL)
 
+## Dependencies
+
+- [https://github.com/RealFaceCode/TimeHandler](https://github.com/RealFaceCode/TimeHandler)
+- [https://github.com/RealFaceCode/FileHandler](https://github.com/RealFaceCode/FileHandler)
+
 ## Getting Started
 
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/todo-list-management.git
+git clone https://github.com/RealFaceCode/TodoApp
 ```
 
 2. Change directory to the project folder:
 
 ```bash
-cd todo-list-management
+cd TodoApp
 ```
 
 3. Compile the source code:
