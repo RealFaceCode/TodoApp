@@ -91,7 +91,9 @@ void signalHandler(int signum)
 }
 
 int main() {
+#ifdef _WIN32
     std::signal(SIGBREAK , signalHandler);
+#endif
     std::signal(SIGINT , signalHandler);
 
     fs::path dirPath("todo_lists/");
