@@ -9,6 +9,7 @@ Make sure you have the following installed on your system:
 - C++ Compiler (e.g., g++ for Linux or MinGW for Windows)
 - Filesystem Library (Included in C++17)
 - C++ Standard Template Library (STL)
+- Using some c++20 features so minimum requirement is c++20!
 
 ## Dependencies
 
