@@ -34,13 +34,13 @@ cd TodoApp
 For Linux:
 
 ```bash
-g++ -std=c++23 -o todo_manager main.cpp
+g++ -std=c++20 -o todo main.cpp
 ```
 
 For Windows (using MinGW):
 
 ```bash
-g++ -std=c++23 -o todo_manager.exe main.cpp
+g++ -std=c++20 -o todo.exe main.cpp
 ```
 
 ## Usage
