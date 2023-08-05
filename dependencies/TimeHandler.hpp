@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <chrono>
-#include <format>
 
 namespace TimeHandler
 {
@@ -11,10 +10,15 @@ namespace TimeHandler
     {
         time_t now = time(nullptr);
         tm* currentTime = localtime(&now);
-        return std::format("{:04d}-{:02d}-{:02d} {:02d}:{:02d}:{:02d}",
-                           currentTime->tm_year + 1900, currentTime->tm_mon + 1,
-                           currentTime->tm_mday, currentTime->tm_hour,
-                           currentTime->tm_min, currentTime->tm_sec);
+        std::string r;
+        r += std::to_string(currentTime->tm_year + 1900)
+                + ":" + std::to_string(currentTime->tm_mon + 1)
+                + ":" + std::to_string(currentTime->tm_mday)
+                + " " + std::to_string(currentTime->tm_hour)
+                + "-" + std::to_string(currentTime->tm_min)
+                + "-" + std::to_string(currentTime->tm_sec);
+
+        return r;
     }
 
     enum class ClockMode

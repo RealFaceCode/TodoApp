@@ -204,7 +204,10 @@ int main() {
                         continue;
                     }
 
-                    entries.emplace_back(std::format("{}\t[ ] - {}\n",count++, inputBuffer));
+                    std::string entry = std::to_string(count++);
+                    entry += "\t[ ] - " + inputBuffer + "\n";
+
+                    entries.emplace_back(entry);
                     FileHandler::WriteToFile(currentTodoList, entries.at(entries.size() -1), std::ios::app);
 
                     clearConsole();
